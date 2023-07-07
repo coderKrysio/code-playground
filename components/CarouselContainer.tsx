@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const CarouselContainer = () => {
   return (
-    <div className="border-2 border-white w-[750px] p-5 h-[700px]">
+    <div className="w-[850px] p-5 m-5 mt-[60px]">
       <Carousel
         className="rounded-2xl overflow-hidden"
         autoPlay
