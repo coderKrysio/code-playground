@@ -2,7 +2,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Image from "next/image";
 
-const CarouselContainer = () => {
+export const CarouselContainer = () => {
   return (
     <div className="w-[850px] p-5 m-5 mt-[60px]">
       <Carousel
@@ -72,5 +72,3 @@ const CarouselContainer = () => {
     </div>
   );
 };
-
-export default CarouselContainer;
