@@ -1,4 +1,4 @@
-const GameContainer = () => {
+export const GameContainer = () => {
     return (
         <div
         className="h-[350px] w-[250px] flex flex-col gap-[20px] items-center p-2"
@@ -13,5 +13,3 @@ const GameContainer = () => {
         </div>
     )
 }
-
-export default GameContainer

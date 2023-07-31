@@ -1,8 +1,7 @@
-"use client";
+import { Navbar } from "@/components/navbar";
+import { CarouselContainer } from "@/components/carousel-container";
+import { CategoryPanel } from "@/components/category-panel";
 
-import CarouselContainer from "@/components/CarouselContainer";
-import CategoryPanel from "@/components/CategoryPanel";
-import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (

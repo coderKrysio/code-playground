@@ -1,7 +1,7 @@
 import { Carousel } from "react-responsive-carousel"
-import GameContainer from "./GameContainer"
+import { GameContainer } from "./game-container"
 
-const CategoryPanel = () => {
+export const CategoryPanel = () => {
     return (
         <div className="w-[850px] flex flex-col justify-center items-center p-3">
             <h2
@@ -12,13 +12,7 @@ const CategoryPanel = () => {
             className="w-full p-3 flex gap-[30px] overflow-x-scroll"
             >
                 <GameContainer />
-                <GameContainer />
-                <GameContainer />
-                <GameContainer />
-                <GameContainer />    
             </div>
         </div>
     )
 }
-
-export default CategoryPanel

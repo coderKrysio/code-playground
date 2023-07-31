@@ -5,7 +5,7 @@ const gameFont = Black_Ops_One({
   weight: "400",
 });
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <div className="h-[60px] w-screen flex justify-start items-center p-5 fixed top-0 left-0 z-[10]">
       <h1 className={`${gameFont.className} text-3xl text-[#2cb67d]`}>
@@ -14,5 +14,3 @@ const Navbar = () => {
     </div>
   );
 };
-
-export default Navbar;
