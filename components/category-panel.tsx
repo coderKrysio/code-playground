@@ -1,4 +1,3 @@
-import { Carousel } from "react-responsive-carousel"
 import { GameContainer } from "./game-container"
 
 export const CategoryPanel = () => {
@@ -11,6 +10,11 @@ export const CategoryPanel = () => {
             <div
             className="w-full p-3 flex gap-[30px] overflow-x-scroll"
             >
+                <GameContainer />
+                <GameContainer />
+                <GameContainer />
+                <GameContainer />
+                <GameContainer />
                 <GameContainer />
             </div>
         </div>
