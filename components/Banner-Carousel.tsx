@@ -2,7 +2,7 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-export const ImageCarousel = () => {
+export const BannerCarousel = () => {
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.

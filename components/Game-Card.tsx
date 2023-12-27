@@ -1,4 +1,4 @@
-export const Card = ({ cardcolor }: { cardcolor: string }) => {
+export const GameCard = ({ cardcolor }: { cardcolor: string }) => {
     return (
         <div className={`after:w-[375px] after:h-[455px] after:bg-[#${cardcolor}] after:blur-[2px] after:rounded-2xl after:rounded-es-[74px] flex items-center justify-center relative text-[#091833]`}>
             <div className="absolute w-[370px] h-[450px] rounded-2xl rounded-es-[72px] flex flex-col items-center gap-[15px] z-[1] overflow-hidden backdrop-filter backdrop-blur-sm bg-opacity-10">

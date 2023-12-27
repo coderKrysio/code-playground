@@ -1,16 +1,14 @@
 "use client";
 import {
-    Box,
     Circle,
     Diamond,
-    LandPlot,
     RectangleHorizontal,
     Squircle,
     Triangle,
     TriangleRight,
 } from "lucide-react";
-import { ImageCarousel } from "./image-carousel";
-import { Bounce, Flip, Roll, Rotate } from "react-awesome-reveal";
+import { Bounce, Flip, Rotate } from "react-awesome-reveal";
+import { BannerCarousel } from "./Banner-Carousel";
 
 export const HeroComponent = () => {
     return (
@@ -67,7 +65,7 @@ export const HeroComponent = () => {
                             The Game Hub
                         </div>
                     </Flip>
-                    <ImageCarousel />
+                    <BannerCarousel />
                 </div>
                 </Bounce>
             </div>
