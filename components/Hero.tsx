@@ -54,19 +54,19 @@ export const HeroComponent = () => {
 
             <div className="hero--container rounded-xl relative">
                 <Bounce duration={600} triggerOnce className="w-full h-full">
-                <div className="h-[120%] w-[110%] relative left-[-5%] top-[-10%] bg-purple-700 rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-[2px] bg-opacity-10 px-[120px] py-[100px] z-[2]">
-                    <Flip
-                        delay={700}
-                        triggerOnce
-                        direction="horizontal"
-                        className="absolute bottom-[-30px] left-[-30px]"
-                    >
-                        <div className="font-extrabold shadow-xl text-6xl text-[#3fff2d]">
-                            The Game Hub
-                        </div>
-                    </Flip>
-                    <BannerCarousel />
-                </div>
+                    <div className="h-[120%] w-[110%] relative left-[-5%] top-[-10%] bg-purple-700 rounded-3xl bg-clip-padding backdrop-filter backdrop-blur-[2px] bg-opacity-10 px-[120px] py-[100px] z-[2]">
+                        <Flip
+                            delay={700}
+                            triggerOnce
+                            direction="horizontal"
+                            className="absolute bottom-[-30px] left-[-30px]"
+                        >
+                            <div className="font-extrabold shadow-xl text-6xl text-[#3fff2d]">
+                                The Game Hub
+                            </div>
+                        </Flip>
+                        <BannerCarousel />
+                    </div>
                 </Bounce>
             </div>
 

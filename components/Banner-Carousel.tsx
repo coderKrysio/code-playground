@@ -1,4 +1,3 @@
-"use client";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -24,7 +23,7 @@ export const BannerCarousel = () => {
     };
 
     return (
-        <section className="w-full h-full grid items-center text-white">
+        <div className="w-full h-full grid items-center text-white">
             <Carousel
                 arrows={false}
                 infinite
@@ -38,6 +37,6 @@ export const BannerCarousel = () => {
                 <div className="w-full h-full bg-blue-400">Item 3</div>
                 <div className="w-full h-full bg-yellow-400">Item 4</div>
             </Carousel>
-        </section>
+        </div>
     );
 };
