@@ -2,26 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* width */
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 0px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0px;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
+
+.hero--container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(95deg, var(--color) 25%, transparent 25%) -50px 0, linear-gradient(-15deg, var(--color) 25%, transparent 25%) -50px 0, linear-gradient(25deg, transparent 75%, var(--color) 75%) -50px 0, linear-gradient(-45deg, transparent 75%, var(--color) 75%) -50px 0, linear-gradient(-15deg, transparent 75%, var(--color) 75%) -50px 0;
+    --color: #a748f5;
+    background: linear-gradient(95deg, var(--color) 25%, transparent 25%) -50px 0, linear-gradient(-15deg, var(--color) 25%, transparent 25%) -50px 0, linear-gradient(25deg, transparent 75%, var(--color) 75%) -50px 0, linear-gradient(-45deg, transparent 75%, var(--color) 75%) -50px 0, linear-gradient(-15deg, transparent 75%, var(--color) 75%) -50px 0;
+    background-color: #b669fd;
+    background-size: 40px 40px;
+}
+
+.react-multi-carousel-track {
+    @apply h-full
 }
