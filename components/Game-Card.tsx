@@ -1,3 +1,5 @@
+import { Github, Play } from "lucide-react";
+
 export const GameCard = ({
     purple = false,
 }: {
@@ -21,11 +23,11 @@ export const GameCard = ({
                     quibusdam fuga iste corporis recusandae vitae!
                 </div>
                 <div className="px-[30px] w-full mt-[5px] flex justify-between items-center">
-                    <button className="py-2 px-8 rounded-es-[37px] rounded-lg font-medium bg-[#091833] text-[#00b8ff]">
-                        Play Now
+                    <button className="py-[10px] px-6 rounded-es-[37px] rounded-lg flex items-center gap-[10px] font-medium group bg-[#091833] text-[#00b8ff]">
+                        Play Now <Play width={18} height={18} className="group-hover:fill-[#00b8ff] transition-colors" />
                     </button>
-                    <button className="py-2 px-8 rounded-lg font-medium bg-[#091833] text-[#00b8ff]">
-                        Play Now
+                    <button className="py-[10px] px-6 rounded-lg font-medium flex items-center gap-[10px] group bg-[#091833] text-[#00b8ff]">
+                        Github <Github width={18} height={18} className="group-hover:fill-[#00b8ff] transition-colors" />
                     </button>
                 </div>
             </div>
