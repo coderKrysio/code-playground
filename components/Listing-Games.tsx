@@ -5,7 +5,7 @@ import { GameCard } from "./Game-Card";
 
 export const ListingGame = () => {
     return (
-        <section className="w-screen min-h-screen flex flex-col items-center justify-center p-[50px] pt-[90px]">
+        <section className="w-screen min-h-screen flex flex-col items-center justify-center p-[50px] pt-[90px] max-[800px]:mt-[-30%] max-[550px]:mt-[-65%] max-[450px]:mt-[-95%]">
             <div className="flex flex-col items-center justify-center">
                 <div>
                     <AttentionSeeker effect="flash">
