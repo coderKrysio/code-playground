@@ -1,3 +1,4 @@
+import { Footer } from "@/components/Footer";
 import { HeroComponent } from "@/components/Hero";
 import { ListingGame } from "@/components/Listing-Games";
 import { Navbar } from "@/components/Navbar";
@@ -8,6 +9,7 @@ export default function Home() {
             <Navbar />
             <HeroComponent />
             <ListingGame />
+            <Footer />
         </main>
     );
 }

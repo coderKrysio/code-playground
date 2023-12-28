@@ -44,3 +44,15 @@
 .react-multi-carousel-track {
     @apply h-full
 }
+
+@media screen and (max-width: 800px) {
+    .hero--container {
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .hero--container {
+        height: 50%;
+    }
+}
