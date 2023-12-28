@@ -1,6 +1,6 @@
 "use client";
 import { Gamepad2, Swords } from "lucide-react";
-import { AttentionSeeker, Slide, Zoom } from "react-awesome-reveal";
+import { AttentionSeeker, Fade, Slide, Zoom } from "react-awesome-reveal";
 import { GameCard } from "./Game-Card";
 
 export const ListingGame = () => {
@@ -38,15 +38,21 @@ export const ListingGame = () => {
                     </Slide>
                 </div>
             </div>
-            <div className="pt-[60px] px-3 relative flex flex-wrap items-center justify-center gap-[90px]">
-                <GameCard />
-                <GameCard purple />
-                <GameCard />
-                <GameCard purple />
-                <GameCard />
-                <GameCard purple />
-                <GameCard />
-                <GameCard purple />
+            <div className="flex flex-wrap items-center justify-center gap-[90px]">
+                <Fade
+                    reverse={false}
+                    duration={700}
+                    className="pt-[60px] px-3 relative w-fit"
+                >
+                    <GameCard />
+                    <GameCard purple />
+                    <GameCard />
+                    <GameCard purple />
+                    <GameCard />
+                    <GameCard purple />
+                    <GameCard />
+                    <GameCard purple />
+                </Fade>
             </div>
         </section>
     );
