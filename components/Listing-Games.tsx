@@ -1,7 +1,7 @@
 "use client";
 import { Gamepad2, Swords } from "lucide-react";
 import { AttentionSeeker, Slide, Zoom } from "react-awesome-reveal";
-import { GameCard } from "./Game-Card";
+// import { GameCard } from "./Game-Card";
 
 export const ListingGame = () => {
     return (
@@ -29,14 +29,14 @@ export const ListingGame = () => {
                 </Slide>
             </div>
             <div className="pt-[60px] px-3 relative flex flex-wrap items-center justify-center gap-[90px]">
-                <GameCard cardcolor="0abdc6" />
+                {/* <GameCard cardcolor="0abdc6" />
                 <GameCard cardcolor="bd00ff" />
                 <GameCard cardcolor="0abdc6" />
                 <GameCard cardcolor="bd00ff" />
                 <GameCard cardcolor="0abdc6" />
                 <GameCard cardcolor="bd00ff" />
                 <GameCard cardcolor="0abdc6" />
-                <GameCard cardcolor="bd00ff" />
+                <GameCard cardcolor="bd00ff" /> */}
             </div>
         </section>
     );
