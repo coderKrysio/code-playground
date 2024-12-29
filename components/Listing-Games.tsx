@@ -1,11 +1,12 @@
 "use client";
 import { Gamepad2, Swords } from "lucide-react";
 import { AttentionSeeker, Fade, Slide, Zoom } from "react-awesome-reveal";
-import { GameCard } from "./Game-Card";
+import { Card } from "./Card";
+import { games } from "@/utils/data";
 
 export const ListingGame = () => {
     return (
-        <section className="w-screen min-h-screen flex flex-col items-center justify-center p-[50px] pt-[90px] max-[800px]:mt-[-30%] max-[550px]:mt-[-65%] max-[450px]:mt-[-95%]">
+        <section className="w-screen min-h-screen flex flex-col items-center justify-center p-[50px]">
             <div className="flex flex-col items-center justify-center">
                 <div>
                     <AttentionSeeker effect="flash">
@@ -38,20 +39,19 @@ export const ListingGame = () => {
                     </Slide>
                 </div>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-[90px]">
+            <div className="flex flex-wrap items-center justify-center gap-[60px]">
                 <Fade
                     reverse={false}
                     duration={700}
                     className="pt-[60px] px-3 relative w-fit"
                 >
-                    <GameCard />
-                    <GameCard purple />
-                    <GameCard />
-                    <GameCard purple />
-                    <GameCard />
-                    <GameCard purple />
-                    <GameCard />
-                    <GameCard purple />
+                    {games.map((game) => (
+                        <Card
+                            key={game.id}
+                            cardInfo={game}
+                            purple={game.id % 2 === 0}
+                        />
+                    ))}
                 </Fade>
             </div>
         </section>
